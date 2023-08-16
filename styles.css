@@ -1,0 +1,202 @@
+/* Reset de Estilos para zerar margens e paddings */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 30px;
+    margin-left: 850px;
+    margin-top: 10px;
+}
+
+/* Estilo do Menu de Navegação */
+.menu {
+    list-style: none;
+    padding: 0;
+    text-align: center; 
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: block;
+    padding: 1.5rem 0.5rem;
+    transition: color 0.3s;
+}
+
+.menu-link:hover {
+    color: #ffffff;
+}
+
+/* Estilo do Menu Hamburguer */
+.menu-hamburguer {
+    position: fixed;
+    top: 32px;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.3s;
+}
+
+.menu-hamburguer::after {
+    background-color: #ff9900;
+    color: #f00
+}
+
+.menu-hamburguer.active {
+    color: rgb(0, 0, 0);
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(252, 252, 253); 
+    margin: 3px 0;
+    transition: background-color 0.3s;
+}
+
+
+.menu-nav {
+    position: fixed;
+    top: 0;
+    left: -50%; 
+    width: 50%; 
+    height: 100%;
+    background-color: #f5f5f5;
+    padding-top: 80px;
+    transition: left 0.3s;
+    z-index: 99;
+    overflow: hidden; 
+}
+
+.menu-nav.active {
+    left: 0;
+}
+
+.menu-nav {
+    position: fixed;
+    top: 0;
+    left: -50%; 
+    width: 50%; 
+    height: 100%;
+    background-color: #000000;
+    padding-top: 80px;
+    transition: left 0.3s;
+    z-index: 99;
+    overflow: hidden; 
+}
+
+.menu-nav.active {
+    left: 0;
+}
+
+.menu-nav a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    padding: 1rem;
+    transition: color 0.3s;
+    line-height: 4;
+}
+
+.menu-nav a:hover {
+    color: #ff9900;
+}
+
+/* Estilo da Seção de Destaques */
+.destaques {
+    text-align: center;
+    padding: 2rem;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s;
+}
+
+.produto:hover {
+    box-shadow: 0 0 10px rgba(253, 253, 253, 0.1);
+}
+
+.produto-nome {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.produto-descricao {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.preco {
+    color: #f00;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Estilo do Rodapé */
+.rodape {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+}
+
+.direitos {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 350px; /* Ajustar a largura da barra de pesquisa */
+    margin-left: 250px;
+    margin-top: -35px;
+   
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+
+  .search-button {
+    background-color: #007bff;
+    color: white;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
