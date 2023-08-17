@@ -126,6 +126,10 @@ header {
 .destaques {
     text-align: center;
     padding: 2rem;
+    margin-top: -10px;
+    margin-left: 350px;
+    width: 50%;
+    
 }
 
 .subtitulo {
@@ -200,3 +204,5 @@ header {
     border-radius: 5px;
     cursor: pointer;
   }
+
+  
