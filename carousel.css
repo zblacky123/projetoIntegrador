@@ -1,0 +1,86 @@
+/* Estilo da Seção de Destaques */
+.destaques {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.carousel{
+    
+    width: 100%;
+}
+
+.iconSeta{
+    background-color: #000000;
+    border-radius: 16px;
+  }
+
+.itemImg{
+    max-width: 25%;
+    height: 300px;
+    margin-left: 75px;
+}
+
+.carousel-inner{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicators{
+    background-color: black;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s;
+}
+
+.produto:hover {
+    box-shadow: 0 0 10px rgba(253, 253, 253, 0.1);
+}
+
+.produto-nome {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.produto-descricao {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.preco {
+    color: #f00;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Estilo do Rodapé /
+
+.rodape {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+}
+
+.direitos {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+*/

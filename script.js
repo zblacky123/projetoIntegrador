@@ -1,19 +1,24 @@
-// Seleciona os elementos relevantes
-const menuHamburguer = document.getElementById("menu-hamburguer");
-const menuNav = document.getElementById("menu-nav");
+// Hamburguer Menu
 
-// Adiciona um ouvinte de evento para o botão hamburguer
-menuHamburguer.addEventListener("click", () => {
-    // Compara se o menu está aberto ou fechado
-    const isMenuOpen = menuNav.classList.contains("active");
-    
-    // Altera a cor do botão hamburguer de acordo com o estado do menu
-    if (isMenuOpen) {
-        menuHamburguer.classList.remove("active");
-    } else {
-        menuHamburguer.classList.add("active");
-    }
+const hamburger = document.querySelector(".hamburger")
+const nav_menu = document.querySelector(".nav-menu")
 
-    // Adiciona ou remove a classe "active" ao menu de navegação
-    menuNav.classList.toggle("active");
+hamburger.addEventListener("click",()=>{
+  hamburger.classList.toggle("active");
+  nav_menu.classList.toggle("active");
+})
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  nav_menu.classList.remove("active");
+}))
+
+// Search Bar
+
+let input = document.querySelector(".input");
+let btn = document.querySelector(".btn");
+let search = document.querySelector(".search");
+
+btn.addEventListener("click", () => {
+  search.classList.toggle("active");
+  input.focus();
 });
